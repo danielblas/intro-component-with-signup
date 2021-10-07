@@ -1,0 +1,77 @@
+@use '../util/' as *;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: rem(16);
+    color: white;
+}
+
+.text {
+    text-align: center;
+
+    @include breakpoint(large) {
+        text-align: left;
+    }
+
+
+    &__header {
+        font-size: rem(28);
+        line-height: rem(36);
+        font-weight: 700;
+
+        @include breakpoint(large) {
+            font-size: rem(54);
+            line-height: rem(56);
+        }
+    }
+
+    &__para {
+        font-weight: 500;
+    }
+}
+
+.panel {
+    text-align: center;
+
+    &__try {
+        font-size: rem(14);
+        font-weight: 400;
+        
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.form {
+    &__input {
+        color: $dark-blue;
+        font-size: rem(12);
+        font-weight: 600;
+    }
+
+    ::placeholder {
+        font-family: 'Poppins', sans-serif;
+        font-size: rem(14);
+        font-weight: 600;
+    }
+
+    &__terms {
+        font-size: rem(10);
+        font-weight: 400;
+        color: $grayish-blue;
+
+        span {
+            color: $red;
+            font-weight: 700;
+        }
+    }
+}
+
+.input--btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: rem(16);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}

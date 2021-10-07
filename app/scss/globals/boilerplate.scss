@@ -1,0 +1,36 @@
+@use '../util/' as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(/images/bg-intro-desktop.png), $red;
+
+    @include breakpoint-down(small) {
+        width: 87%;
+        margin: auto;
+    }
+
+    @include breakpoint(large) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,36 @@
+@use '../util/' as *;
+
+.form {
+    padding: rem(25);
+
+    @include breakpoint(large) {
+        padding: rem(40);
+    }
+
+    &__input {
+        width: 100%;
+        padding: rem(20) rem(30);
+        border: rem(1) solid $grayish-blue;
+        border-radius: rem(5);
+        margin-bottom: rem(16);
+
+        @include breakpoint(large) {
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__input:focus {
+        border-color: $blue;
+        outline: none;
+    }
+
+    &__terms {
+        padding: 0 rem(24);
+    }
+   
+}
+
+.input--btn {
+    background-color: $green;
+    box-shadow: inset 0 (- rem(5)) rgb(0, 0, 0 , .25);
+}
