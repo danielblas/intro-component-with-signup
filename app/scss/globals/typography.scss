@@ -46,8 +46,33 @@ body {
 .form {
     &__input {
         color: $dark-blue;
+        &__text {
         font-size: rem(12);
         font-weight: 600;
+            &:focus {
+                color: $dark-blue;
+            }
+        }
+
+        &__error {
+            div {
+                text-align: right;
+                color: $red;
+                font-size: rem(10);
+                font-style: oblique;
+                font-weight: 600;
+            }
+        }
+
+        &__btn {
+            font-family: 'Poppins', sans-serif;
+            font-size: rem(16);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+
+
     }
 
     ::placeholder {
@@ -66,12 +91,4 @@ body {
             font-weight: 700;
         }
     }
-}
-
-.input--btn {
-    font-family: 'Poppins', sans-serif;
-    font-size: rem(16);
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
 }

@@ -35,11 +35,37 @@
     </div>
     <div class="panel__form">
       <form class="form" action="">
-        <input class="form__input input--fn" type="text" placeholder="First Name">
-        <input class="form__input input--ln" type="text" placeholder="Last Name">
-        <input class="form__input input--mail" type="text" placeholder="Email Address">
-        <input class="form__input input--pass" type="text" placeholder="Password">
-        <input class="form__input input--btn" type="submit" value="Claim your free trial">
+        <div class="form__input">
+          <input class="form__input__text" type="text" placeholder="First Name">
+          <div class="form__input__error">
+            <div>First Name cannot be empty</div>
+            <img src="/images/icon-error.svg" alt="error">
+          </div>
+        </div>
+        <div class="form__input">
+          <input class="form__input__text" type="text" placeholder="Last Name">
+          <div class="form__input__error">
+            <div>Last Name cannot be empty</div>
+            <img src="/images/icon-error.svg" alt="error">
+          </div>
+        </div>
+        <div class="form__input">
+          <input class="form__input__text input--email" type="text" placeholder="Email Adress">
+          <div class="form__input__error">
+            <div>Looks like this is not an email</div>
+            <img src="/images/icon-error.svg" alt="error">
+          </div>
+        </div>
+        <div class="form__input">
+          <input class="form__input__text" type="text" placeholder="Password">
+          <div class="form__input__error">
+            <div>Password cannot be empty</div>
+            <img src="/images/icon-error.svg" alt="error">
+          </div>
+        </div>
+        <div class="form__input">
+          <input class="form__input__btn" type="button" value="Claim your free trial">
+        </div>
         <div class="form__terms">
           By clicking the button, you are agreeing to our <span>Terms and Services</span>
         </div>
